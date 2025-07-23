@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -28,16 +34,23 @@
                 <span class="bar"></span>
             </div>
         </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+        </div>
     </nav>
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight">Panuwat</span></h1>
-         <p class="hero-subtitle">
-         <span id="typing-text"></span>
-         <span class="cursor">|</span>
-         </p>
+            <h1>Hello, I'm <span class="highlight">Panuwat Yathuam</span></h1>
+            <p class="hero-subtitle">
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+            </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -150,7 +163,7 @@
     </div>
   </div>
 </section>
-
+  
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -206,6 +219,6 @@
         </div>
     </footer>
     <button id="scrollTopBtn" style="display:none; position:fixed; bottom:30px; right:30px;">⬆️</button>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
