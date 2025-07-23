@@ -91,7 +91,6 @@ contactForm.addEventListener('submit', (e) => {
     }
 });
 
-feature/student-a-features
 // Loading Animation
 window.addEventListener('load', () => {
     const loader = document.querySelector('.loader');
@@ -179,5 +178,3 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-main
