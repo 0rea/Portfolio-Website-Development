@@ -33,6 +33,7 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+        </div>
             <div class="theme-toggle">
                 <i class="fas fa-moon" id="theme-icon"></i>
             </div>
@@ -46,8 +47,10 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hello, I'm <span class="highlight">Panuwat Yathuam</span></h1>
-            <p class="hero-subtitle">Full Stack Developer</p>
-            <p class="hero-description">I create beautiful and functional web applications</p>
+            <p class="hero-subtitle">
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+            </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -126,25 +129,41 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <div class="project-info">
-                        <h3>mini-ecommerce-collaboration</h3>
-                        <p>My Simple Store web app</p>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   <!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="ui">UI/UX</button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" data-category="web">
+        <img src="https://www.pokeharbor.com/wp-content/uploads/2023/06/download.jpeg" alt="Web Project 1" class="project-image">
+        <h3>Pokémon Emerald</h3>
+        <p>gen 3</p>
+      </div>
+
+      <div class="project-card" data-category="mobile">
+        <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/game_boy_4/H2x1_GB_PokemonRed_enGB_image1600w.jpg" alt="Mobile Project 1" class="project-image">
+        <h3>Pokémon Red</h3>
+        <p>Gen 1</p>
+      </div>
+
+      <div class="project-card" data-category="ui">
+        <img src="https://pm1.aminoapps.com/6684/2b3b82f653e7799c75ae8c138e7e4ae96547ad6d_hq.jpg" alt="UI/UX Project 1" class="project-image">
+        <h3>Pokémon Heartgold and Soulsilver</h3>
+        <p>Gen 2</p>
+      </div>
+    </div>
+  </div>
+</section>
+  
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -188,10 +207,15 @@
             </div>
         </div>
     </section>
+
+    <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Panuwat Yathuam. Software Engineering, RMUTL. All rights reserved.</p>
+            <p>&copy; 2025 Panuwat Yathuam. Software Engineering, RMUTL. All rights reserved</p>
         </div>
     </footer>
     <button id="scrollTopBtn" style="display:none; position:fixed; bottom:30px; right:30px;">⬆️</button>
